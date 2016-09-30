@@ -58,7 +58,6 @@ module.exports = {
     'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
     'line-comment-position': 'off',
     'no-inline-comments': 'off',
-    'computed-property-spacing': ['error', 'always'],
     'lines-around-comment': ['error', {
       'beforeBlockComment': true,
       'allowBlockStart': true,
