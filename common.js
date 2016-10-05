@@ -19,6 +19,7 @@ module.exports = {
   },
   'rules': {
     'no-console': 'off',
+    'linebreak-style': 'off',
     'no-extra-boolean-cast': 'off',
     'no-prototype-builtins': 'off',
     'no-extra-parens': ['error', 'functions'],
