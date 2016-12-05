@@ -25,7 +25,7 @@ module.exports = {
     'valid-jsdoc': 'off',
     'class-methods-use-this': 'off',
     'dot-location': ['error', 'property'],
-    'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 10, 100, 1000] }],
+    'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 10, 100, 1000], 'ignoreArrayIndexes': true }],
     'no-warning-comments': 'off',
     'no-alert': 'off',
     'no-invalid-this': 'off',
@@ -63,6 +63,7 @@ module.exports = {
       'allowBlockStart': true,
       'allowBlockEnd': true,
     }],
+    'capitalized-comments': 'off',
 
     // we might want again
     'max-statements': 'off',
