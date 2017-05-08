@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-yepstr",
+  "name": "@yepstr/eslint-config-yepstr",
   "version": "1.0.0",
   "description": "Yepstrs eslint config",
   "main": "index.js",
