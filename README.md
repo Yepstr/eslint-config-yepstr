@@ -7,5 +7,5 @@ Need to depend on all eslint stuff in own repo
 ### Default
 ```json
 {
-    "extends": "yepstr"
+    "extends": "@yepstr/eslint-config-yepstr"
 }
