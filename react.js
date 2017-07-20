@@ -47,6 +47,7 @@ module.exports = {
         'componentWillUpdate',
         'componentDidUpdate',
         'componentWillUnmount',
+        '/^handle.+$',
         '/^on.+$/',
         '/^get.+$/',
         '/^render.+$/',
