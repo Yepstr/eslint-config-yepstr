@@ -1,79 +1,30 @@
-/* eslint-env node */
 const INDENTS = 2;
 const STATEMENTS_PER_LINE = 2;
 
 module.exports = {
-  'parser': 'babel-eslint',
+  'extends': 'eslint:recommended',
   'parserOptions': {
-      'ecmaVersion': 2017,
-      'sourceType': 'module'
+    'ecmaVersion': 2017,
   },
-  'plugins': [
-    'babel',
-  ],
-  'extends': [
-    'eslint:all',
-  ],
   'env': {
     'es6': true,
   },
   'rules': {
     'no-console': 'off',
-    'linebreak-style': 'off',
-    'no-extra-boolean-cast': 'off',
-    'no-prototype-builtins': 'off',
     'no-extra-parens': ['error', 'functions'],
-    'valid-jsdoc': 'off',
-    'class-methods-use-this': 'off',
     'dot-location': ['error', 'property'],
-    'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 2, 3, 10, 100, 1000], 'ignoreArrayIndexes': true }],
-    'no-warning-comments': 'off',
-    'no-alert': 'off',
-    'no-invalid-this': 'off',
-    'init-declarations': 'off',
+    'no-magic-numbers': ['error', {
+      'ignore': [-1, 0, 1, 2, 3, 10, 100, 1000],
+      'ignoreArrayIndexes': true
+    }],
     'indent': ['error', INDENTS],
     'quotes': ['error', 'single'],
-    'object-curly-spacing': 'off',
-    'comma-dangle': ['error', 'always-multiline'],
-    'quote-props': 'off',
-    'sort-keys': 'off',
+    'comma-dangle': ["error", {"functions": "always"}],
     'padded-blocks': ['error', 'never'],
-    'sort-imports': 'off',
     'template-curly-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
-    'object-curly-newline': 'off',
-    'require-jsdoc': 'off',
-    'no-underscore-dangle': 'off',
-    'one-var': 'off',
-    'arrow-body-style': 'off',
-    'newline-after-var': 'off',
-    'max-len': 'off',
-    'object-shorthand': 'off',
-    'max-lines': 'off',
-    'max-params': 'off',
     'brace-style': ['error', '1tbs', { 'allowSingleLine': true }],
-    'id-length': 'off',
     'max-statements-per-line': ['error', { 'max': STATEMENTS_PER_LINE }],
-    'multiline-ternary': 'off',
-    'no-mixed-operators': 'off',
     'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
-    'line-comment-position': 'off',
-    'no-inline-comments': 'off',
-    'lines-around-comment': ['error', {
-      'beforeBlockComment': true,
-      'allowBlockStart': true,
-      'allowBlockEnd': true,
-    }],
-    'capitalized-comments': 'off',
-    'no-lonely-if': 'off',
-
-    // we might want again
-    'max-statements': 'off',
-    'object-property-newline': 'off',
-    'space-unary-ops': 'off',
-    'func-style': 'off',
-    'no-ternary': 'off',
-    'prefer-reflect': 'off',
-    'prefer-template': 'off',
   },
 };
