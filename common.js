@@ -13,16 +13,13 @@ module.exports = {
     'no-console': 'off',
     'no-extra-parens': ['error', 'functions'],
     'dot-location': ['error', 'property'],
-    'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 2, 3, 10, 100, 1000], 'ignoreArrayIndexes': true }],
+    'no-magic-numbers': ['error', {
+      'ignore': [-1, 0, 1, 2, 3, 10, 100, 1000],
+      'ignoreArrayIndexes': true
+    }],
     'indent': ['error', INDENTS],
     'quotes': ['error', 'single'],
-    'comma-dangle': ['error', {
-      'arrays': 'always-multiline',
-      'objects': 'always-multiline',
-      'imports': 'always-multiline',
-      'exports': 'always-multiline',
-      'functions': 'always-multiline',
-    }],
+    'comma-dangle': ["error", {"functions": "always"}],
     'padded-blocks': ['error', 'never'],
     'template-curly-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
