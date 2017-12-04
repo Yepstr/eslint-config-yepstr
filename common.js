@@ -19,7 +19,7 @@ module.exports = {
     }],
     'indent': ['error', INDENTS],
     'quotes': ['error', 'single'],
-    'comma-dangle': ["error", {"functions": "always"}],
+    'comma-dangle': ['error', 'always-multiline'],
     'padded-blocks': ['error', 'never'],
     'template-curly-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
