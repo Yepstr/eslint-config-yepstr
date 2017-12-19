@@ -1,6 +1,6 @@
 {
   "name": "@yepstr/eslint-config-yepstr",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Yepstrs eslint config",
   "main": "index.js",
   "scripts": {
