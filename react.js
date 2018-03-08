@@ -16,5 +16,10 @@ module.exports = {
     'react/no-multi-comp': ['error', { 'ignoreStateless': true }],
 
     'react/prop-types': 'off', // does not work well with recompse
+
+    'react/jsx-one-expression-per-line': 'error',
+    'react/jsx-boolean-value': ['error', 'always'],
+    'react/jsx-curly-spacing': ['error', 'always'],
+    'react/jsx-curly-brace-presence': ['error', { props: 'always' }],
   },
 };
